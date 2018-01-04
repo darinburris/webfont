@@ -70,6 +70,14 @@ module.exports = function(grunt) {
 					dest: './release'
 				}]
 			},
+			buildFONTS: {
+				files: [{
+					expand: true,
+					cwd: './source',
+					src: ['fonts/**/*'],
+					dest: './release/'
+				}]
+			},
 			dist: {
 				files: [
 					{
@@ -160,7 +168,7 @@ module.exports = function(grunt) {
 		function() {
 			grunt.config.set('taskName', this.name);
 			grunt.task.run(
-				['clean:preRelease', 'copy:buildHTML','sass:dist','rename:scss']//'rjsReplace', , 'jscs','clean:postRelease
+				['clean:preRelease', 'copy:buildHTML','copy:buildFONTS','sass:dist','rename:scss']//'rjsReplace', , 'jscs','clean:postRelease
 			);
 		}
 	);
