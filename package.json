@@ -1,0 +1,28 @@
+{
+  "name": "keyboard-accessibility",
+  "version": "1.0.0",
+  "description": "Tests on keyboard accessibillity",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Darin Burris",
+  "license": "ISC",
+  "dependencies": {
+    "eslint": "^4.13.1"
+  },
+  "devDependencies": {
+    "chalk": "^2.3.0",
+    "express": "^4.16.2",
+    "grunt": "^1.0.1",
+    "grunt-cli": "^1.2.0",
+    "grunt-contrib-clean": "^1.1.0",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-rename-util": "^1.0.0",
+    "grunt-sass": "^2.0.0",
+    "load-grunt-tasks": "^3.5.2",
+    "node-bourbon": "^4.2.8",
+    "node-neat": "^2.0.0-beta.0"
+  }
+}
